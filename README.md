@@ -28,6 +28,7 @@ https://www.homedepot.com/p/STZ-2-in-Black-Iron-Plug-310-P-2/202337741
 5.	ESP8266 Microcontroller. I use the D1 mini, but almost any version can be used, just make sure to check your wiring against the code pin definitions. 
 6.	Wire. Recommend something between 26 and 22 gauge. 
 7.	Potting material. The best option here is an electrically isolating potting material such as MG Chemicals - 832HD. Generic dispensing guns are available all over places like amazon. 
+
 Optional:
 1.	3d Printed enclosure. I’ve provided a few different STL files for different enclosures. You’re more than welcome to design your own or leave the microcontroller dangling on top of your tank if that’s your style. 
 2.	D1 Mini Carrier board. This is the board I designed to clean up my installation. It’s certainly not required, but I have provided the board files if you want to send them to your favorite board house. Alternatively, they can be ordered straight from oshpark:
