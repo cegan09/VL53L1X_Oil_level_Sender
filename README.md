@@ -21,6 +21,7 @@ The oil level sender is effectively two parts. Part 1 is the sensor embedded in 
 ##### Parts List
 Required:
 1.	VL53L1X Sensor. There are several versions of the VL53 sensor, specifically this design uses the L1X version. Make sure you buy one with a cover. There are two common versions sold, part files are provided for each
+
 ![Cover 1](https://user-images.githubusercontent.com/9931804/158423830-42e5e50e-66ec-4600-a506-657a686bb256.jpg)
 ![Cover 2](https://user-images.githubusercontent.com/9931804/158423846-86d0df0e-269b-4121-a038-e0f715dadaf0.jpg)
 
