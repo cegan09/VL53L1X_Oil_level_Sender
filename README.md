@@ -21,6 +21,9 @@ The oil level sender is effectively two parts. Part 1 is the sensor embedded in 
 ##### Parts List
 Required:
 1.	VL53L1X Sensor. There are several versions of the VL53 sensor, specifically this design uses the L1X version. Make sure you buy one with a cover. There are two common versions sold, part files are provided for each
+![Cover 1](https://user-images.githubusercontent.com/9931804/158423830-42e5e50e-66ec-4600-a506-657a686bb256.jpg)
+![Cover 2](https://user-images.githubusercontent.com/9931804/158423846-86d0df0e-269b-4121-a038-e0f715dadaf0.jpg)
+
 2.	2” Black Iron Plug. These can be found at most hardware stores, once example:
 https://www.homedepot.com/p/STZ-2-in-Black-Iron-Plug-310-P-2/202337741
 3.	Isolation Plate. This can be made by hand, or ordered. The dxf file is included and can be sent to a service such as Send Cut Send. Alternately you can use it as a template to cut out by hand. Recommend the plate be made from regular or stainless steel, roughly 0.06” thick. 
