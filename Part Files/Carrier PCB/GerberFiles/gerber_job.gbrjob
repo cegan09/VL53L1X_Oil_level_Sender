@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2022-03-15T16:45:15Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.7.0"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "Oil Level Sensor Carrier Board v4"
+        },
+        "Owner": "Christopher Egan <chris.egan@arctevity.com>",
+        "Size": {
+            "X": 26.650009,
+            "Y": 38.786
+        }
+    }
+}
