@@ -105,6 +105,11 @@ For any of the enclosures I recommend printing in either PETG or ABS/ASA. I sugg
 
 Wiring is straight forward. Whether you use my carrier board or wire it all by hand the connections are the same. If you do use my carrier board you can get away with only wiring up 3.3V, ground, SCL, and SDA, though adding the Shutdown and interrupt wires may let you write more complicated programs. If you do use my carrier board you have the option to wire power to a 2mm pitch JST connector, or just solder wires directly to the board at JP1. If you're exposing the USB connector then you can skip either of those as power will come from the USB. 
 
+![Carrier Board 1](https://user-images.githubusercontent.com/9931804/158461304-8663b78d-f68d-401f-b98a-a3f1dcb9f97c.jpg)
+![Carrier Board 2](https://user-images.githubusercontent.com/9931804/158461322-30731a3c-547e-44a7-8628-43d91e4eb39b.jpg)
+![Board Installed](https://user-images.githubusercontent.com/9931804/158461334-0ee884d1-3fed-42f3-ae8e-0d1f3ce9e166.jpg)
+
+
 
 #### Installation
 Installing the device is straightforward. You will first need to remove one of the extra plugs in the top of your tank. I recommend picking the one furthest from the fill pipe to avoid splashing when the tank is being filled. Before threading in the device, make sure to apply the appropriate pipe dope compound to the threads to make sure it seals and prevent the threads corroding. 
