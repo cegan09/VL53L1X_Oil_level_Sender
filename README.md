@@ -21,6 +21,10 @@ The oil level sender is effectively two parts. Part 1 is the sensor embedded in 
 ##### Parts List
 Required:
 1.	VL53L1X Sensor. There are several versions of the VL53 sensor, specifically this design uses the L1X version. Make sure you buy one with a cover. There are two common versions sold, part files are provided for each
+
+![Cover 1](https://user-images.githubusercontent.com/9931804/158423830-42e5e50e-66ec-4600-a506-657a686bb256.jpg)
+![Cover 2](https://user-images.githubusercontent.com/9931804/158423846-86d0df0e-269b-4121-a038-e0f715dadaf0.jpg)
+
 2.	2” Black Iron Plug. These can be found at most hardware stores, once example:
 https://www.homedepot.com/p/STZ-2-in-Black-Iron-Plug-310-P-2/202337741
 3.	Isolation Plate. This can be made by hand, or ordered. The dxf file is included and can be sent to a service such as Send Cut Send. Alternately you can use it as a template to cut out by hand. Recommend the plate be made from regular or stainless steel, roughly 0.06” thick. 
@@ -41,14 +45,18 @@ There is a BOM for this board provided in the documentation.
 You should use a real metal plug bought from your local hardware store. Do not use plastic, do not 3d print something, go buy the right part, they only cost a couple dollars. In this plug drill a hole through the top that is roughly 1/4inch diameter. 
 
 Prepping the sensor. First print out the spacer. This is used to make the carrier board sit flat on our isolation plate and keeps the soldered wires from shorting on the isolation plate. If the sensor cover did not come pre-installed fit it now, then test fit everything into the printed spacer. 
+![Sensor Test Fit](https://user-images.githubusercontent.com/9931804/158422741-b25591f5-63db-4bde-a8a6-d11135483f80.jpg)
 
 Next wire up the sensor. These can be run with or without the Interrupt and Shutdown pins. If you're trying to run multiple sensors these pins are not optional, but this device uses only one. It doesn't hurt to wire all pins and run them just in case, since you can't get at the sensor after potting. I have opted to only wire the SCL,SDA,3v3, and GND wires in these pictures. 
+![Sensor WIred](https://user-images.githubusercontent.com/9931804/158422799-d5de29b5-c39b-44bb-ba86-1743631d4b0e.jpg)
 
 Fit the sensor into the spacer again and make sure the wire stubs sit recessed. Use a small file to take them down if required. You do NOT want these to touch and short out on the isolation plate. 
+![Wire Test Fit](https://user-images.githubusercontent.com/9931804/158422832-219778cf-abf2-460a-8439-f4da21c3b7ab.jpg)
 
 If you are opting to make your own isolation plate, cut out the isolation plate. This really should be made from metal for its chemical resistance. The outer shape does not need to be perfect, but the cutout around the sensor should be a close fit. Take your time with a small file and get it close. 
 
 When your parts are ready, first glue the sensor into the spacer. I used a little CCA glue just to hold it in place until the potting compound sets. 
+![Sensor Glued in](https://user-images.githubusercontent.com/9931804/158422883-5797bff1-d431-4738-a5f0-c79b8cd913b5.jpg)
 
 Next use a small amount of CCA glue or potting material to hold the sensor and spacer to the isolation plate. We need it held in place securely so we can do the initial potting seal. 
 
