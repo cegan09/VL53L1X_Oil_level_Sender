@@ -42,7 +42,9 @@ There is a BOM for this board provided in the documentation.
 
 
 ##### Sensor and Plug
-You should use a real metal plug bought from your local hardware store. Do not use plastic, do not 3d print something, go buy the right part, they only cost a couple dollars. In this plug drill a hole through the top that is roughly 1/4inch diameter. 
+You should use a real metal plug bought from your local hardware store. Do not use plastic, do not 3d print something, go buy the right part, they only cost a couple dollars. In this plug drill a hole through the top that is roughly 1/4inch diameter. Feel free to do a better job centering the hole than I did.  
+
+![20220316_092351](https://user-images.githubusercontent.com/9931804/158602917-5af710e5-b186-4dd3-baa9-2b1b9bb10110.jpg)
 
 Prepping the sensor. First print out the spacer. This is used to make the carrier board sit flat on our isolation plate and keeps the soldered wires from shorting on the isolation plate. If the sensor cover did not come pre-installed fit it now, then test fit everything into the printed spacer. 
 
@@ -83,11 +85,18 @@ Add a thin layer of potting material to the dammed area. The goal is not to fill
 Once the potting material is fully cured (minimum 12 hours), remove all the hot melt glue. 
 Now we need to fully pot the sensor into the cap. First fully clean the metal plug. Often they are shipped with a thin layer of oil coating them to stop corrosion. You want to fully remove this from the inside so that the potting material and hot melt glue will stick. 
 
-Pass the wiring through the cap, and populate the connectors. I strongly suggest testing this now before you pot everything and lose the ability to figure out you wired the connectors wrong. 
+Pass the wiring through the cap, and populate the connectors. I strongly suggest testing this now before you pot everything and lose the ability to diagnose a miswired connector. 
 
-Use more hot melt glue to hold the isolation plate into the cap and seal up the gap between the two This will keep the potting material from leaking through and making a mess. 
+![20220316_093012](https://user-images.githubusercontent.com/9931804/158603023-5f434c62-22b1-4cf1-8a95-80f7f3b236b6.jpg)
+
+Use more hot melt glue to hold the isolation plate into the cap and seal up the gap between the two. This will keep the potting material from leaking through and making a mess. 
+
+![20220316_093027](https://user-images.githubusercontent.com/9931804/158603074-412ebf8a-3308-4cbb-86e5-396e7ffc667c.jpg)
 
 Now it's time to inject the potting compound into the back of the sensor through the hole we drilled for wires. Take your time and inject the compound allowing it to flow and settle a little bit at a time. You want this cavity completely filled. Allow this to completely cure. 
+
+![20220316_093203](https://user-images.githubusercontent.com/9931804/158603154-48861f69-9f68-4e24-9b3f-20682cd924ad.jpg)
+![20220316_093555](https://user-images.githubusercontent.com/9931804/158603167-1c90012f-e2fc-4a1d-b2b2-717a6a55eb0a.jpg)
 
 Once everything is cured remove the hot melt glue we applied earlier. 
 
@@ -126,3 +135,7 @@ I have provided my Arduino sketch and some basic node red flows if you wish to c
 The microcontroller samples the distance to the oil level 5 times, then averages those readings in an attempt to rule out some measurement error. This reading is then published over MQTT. Then the device waits a set amount of time and repeats. That's basically it. I'm doing all the data analysis off device in the node red flow. The sparkfun VL53X1L library has a lot of features that could be used to calibrate offsets and then do all the math right on the microcontroller skipping the node red portion all together. I choose to do it off device because I already have a node red setup that is doing weather fetching and other data analysis, so it made sense to crunch numbers there. 
 
 I've included a very basic node red flow that will capture the incoming readings, store them, and do some basic plotting and usage calculations.
+
+![Oil Data](https://user-images.githubusercontent.com/9931804/158605348-43d7fb7c-d203-4ea4-84bd-639cafa8d54b.PNG)
+
+I've done some commenting of my code, but it needs more. I'll get around to uploading some updated files soon. 
