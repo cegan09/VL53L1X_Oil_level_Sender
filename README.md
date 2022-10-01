@@ -145,3 +145,7 @@ I've included a very basic node red flow that will capture the incoming readings
 ![Oil Data](https://user-images.githubusercontent.com/9931804/158605348-43d7fb7c-d203-4ea4-84bd-639cafa8d54b.PNG)
 
 I've done some commenting of my code, but it needs more. I'll get around to uploading some updated files soon. 
+
+If you want to use this device with home assistant I have now added some ESPHome code to get you started. This does require adding a custom library to your esphome setup. 
+https://github.com/jardous/tof_vl53l1x
+I removed the wireless, OTA, and encryption info from the example .yaml file. 
