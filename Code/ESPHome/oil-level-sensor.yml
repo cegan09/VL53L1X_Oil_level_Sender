@@ -1,0 +1,39 @@
+esphome:
+  name: oil-level-sensor
+  includes:
+    - /config/esphome/tof_vl53l1x/tof_vl53l1x.h
+  libraries:
+    - "Wire"
+    - "VL53L1x"
+
+esp8266:
+  board: d1_mini
+
+
+# https://esphome.io/components/i2c.html
+i2c:  
+  sda:  D2 
+  scl:  D1
+  scan: True
+  # VL53L1X, 0x29
+  frequency: 400kHz
+
+sensor:
+- platform: custom
+  lambda: |-
+    auto my_sensor = new MyCustomSensor();
+    App.register_component(my_sensor);
+    return {my_sensor};
+
+  sensors:
+    name: "Distance"
+    accuracy_decimals: 1
+    unit_of_measurement: "mm"
+    filters:
+      - sliding_window_moving_average:
+          window_size: 12
+          send_every: 12
+    
+button:
+  - platform: restart
+    name: "oil Restart"
