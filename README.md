@@ -1,6 +1,12 @@
 # VL53L1X_Oil_level_Sender
 DIY Home Heating Oil Level Sender
 
+## Updates
+Added configuration for ESPHome in addition to custom arduino code
+
+## Open bugs
+Occasionally I will see the device hang up. Logs show that the sensor reading is timing out. Rebooting the device works to correct this, but I haven't sorted the underlying cause yet. If you are using the ESPHome setup you can configure an automation to reboot the device when a reading of 0 comes through. 
+
 ## Warnings
 This device probably voids some warrantees, will make your heating oil companies mad, and nullify your home insurance. Maybe, I'm not a lawyer. Just know that installing a DIY device on your heating oil tank probably will get some eyebrows raised if anything goes wrong. Get your tank inspected regularly, do not install if you are not comfortable doing it yourself. I am not responsible for anything that goes wrong on your end. 
 
@@ -139,3 +145,7 @@ I've included a very basic node red flow that will capture the incoming readings
 ![Oil Data](https://user-images.githubusercontent.com/9931804/158605348-43d7fb7c-d203-4ea4-84bd-639cafa8d54b.PNG)
 
 I've done some commenting of my code, but it needs more. I'll get around to uploading some updated files soon. 
+
+If you want to use this device with home assistant I have now added some ESPHome code to get you started. This does require adding a custom library to your esphome setup. 
+https://github.com/jardous/tof_vl53l1x
+I removed the wireless, OTA, and encryption info from the example .yaml file. 
